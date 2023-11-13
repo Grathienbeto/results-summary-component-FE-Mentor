@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  --color_white: hsl(221, 100%, 96%);
+  --color-paleBlue: hsl(221, 100%, 96%);
+  --color-lavander: hsl(241, 100%, 89%);
+  --color-grayBlue: hsl(224, 30%, 27%);
+  --color-slateBlueG: hsl(252, 100%, 67%);
+  --color-cobaltBlueG: hsl(241, 81%, 54%);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 25px;
+  margin: 10rem auto;
+  max-width: 38rem;
+  display: flex;
+  flex-flow: flex nowrap;
+}
+
+.side {
+  flex-basis: 50%;
+}
+
+.result_side {
+  background: linear-gradient(
+    var(--color-slateBlueG),
+    var(--color-cobaltBlueG)
+  );
+  border-radius: 25px;
+  text-align: center;
+}
+
+.result_side h4 {
+  color: var(--color-lavander);
+  font-size: 1.125rem;
+  padding-top: 1.8em;
+}
+
+.score {
+  margin: 1.8rem auto 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 55%;
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(256, 72%, 46%, 0.75),
+    hsla(256, 72%, 46%, 0.6),
+    hsla(241, 72%, 46%, 0.5),
+    hsla(241, 72%, 46%, 0.4),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.score_big {
+  padding-top: 2.25rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color_white);
+}
+
+.score_tiny {
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  color: hsl(241, 100%, 89%, 0.5);
+}
+
+.score_description {
+  margin: 0rem auto;
+  padding: 1.12rem 0;
+  max-width: 75%;
+}
+
+.score_description h3 {
+  padding-top: 0.5rem;
+  color: var(--color_white);
+  font-size: 1.5rem;
+}
+
+.score_description p {
+  padding: 1rem 0 1.625rem;
+  color: var(--color-lavander);
+}
+
+/* right side*/
